@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev_Bank</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="bancario.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Dev_Bank</h1>
+    <div class="saldo">
+      <div>Saldo</div>
+      R$ <span id="saldo">0,00</span>
+    </div>
+    <hr>
+    <div class="valor">
+      <div>Valor</div>
+      R$ <input id="valor" type="number" value="0.00" step="0.01">
+    </div>
+    <div class="buttons">
+      <button id="depositar" onclick="depositar()">Depositar</button>
+      <button id="saque" onclick="sacar()">Sacar</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

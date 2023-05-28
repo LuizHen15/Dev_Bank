@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+  --background: #18122B;
+  --background-card: #393053;
+  --title: #FF6000;
+  --text: #FCFFE7;
+  --font: 'Poppins',sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--background);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  max-height: 450px;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  margin: 3em auto;
+  border-radius: 15px;
+  background-color: var(--background-card);
+  padding: 20px;
+  font-family: var(--font);
+  text-align: center;
+  color: var(--text);
+}
+
+.container h1{
+  font-size: 32px;
+  color: var(--title);
+  margin-bottom: 15px;
+  text-align: initial;
+  font-weight: 700;
+}
+
+.saldo{
+  margin: 10px 0 20px 0;
+}
+
+#saldo{
+  font-size: 60px;
+}
+
+.valor{
+  margin: 30px 0 50px 0;
+}
+
+#valor{
+  border: none;
+  background: none;
+  color: var(--text);
+  text-align: center;
+  font-size: 30px;
+  width: 100px;
+}
+
+#valor::placeholder {
+  color: white;
+}
+
+#valor:focus {
+  outline: none;
+}
+
+.buttons button{
+  width: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  color: var(--text);
+  margin: 0 6px;
+}
+
+#saque{
+  background-color: var(--title);
+}
+
+#depositar{
+  background-color: var(--background);
+}
+
+#saque:hover, #depositar:hover{
+  background-color: black;
+}
